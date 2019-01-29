@@ -2,7 +2,7 @@
 
 export function sqrt() {
   $('.roten').click(function() {
-    $('.screen').append("√");
+    $('.screen').append("1234567890√");
   });
 };
 
