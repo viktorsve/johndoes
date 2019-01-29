@@ -1,8 +1,4 @@
-// user stories 9 - keyboard
-
-var a = console.log("test");
-
-function myEvent(){
+export function myEvent(){
   document.addEventListener('keydown', keyHandler, false);
   function keyHandler(e) {
     if(e.keyCode == 49) {
@@ -25,13 +21,8 @@ function myEvent(){
       $(".screen").append(9);
     } else if (e.keyCode == 48) {
       $(".screen").append(0);
-    } else if (e.keyCode == 61) {
-      $(".screen").append("+");
-    } else if (e.keyCode == 187) {
+    } else if (event.shiftKey e.keyCode == 48) {
       $(".screen").append("=");
     }
   }
 };
-
-
-export {myEvent};
