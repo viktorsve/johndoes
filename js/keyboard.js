@@ -21,7 +21,7 @@ export function myEvent(){
       $(".screen").append(9);
     } else if (e.keyCode == 48) {
       $(".screen").append(0);
-    } else if (event.shiftKey e.keyCode == 48) {
+    } else if (event.shiftKey && e.keyCode == 48) {
       $(".screen").append("=");
     }
   }
