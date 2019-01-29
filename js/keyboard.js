@@ -6,25 +6,29 @@ function myEvent(){
   document.addEventListener('keydown', keyHandler, false);
   function keyHandler(e) {
     if(e.keyCode == 49) {
-      document.querySelector(".screen").append("1");
+      $(".screen").append(1);
     } else if (e.keyCode == 50) {
-      document.querySelector(".screen").append("2");
+      $(".screen").append(2);
     } else if (e.keyCode == 51) {
-      document.querySelector(".screen").append("3");
+      $(".screen").append(3);
     } else if (e.keyCode == 52) {
-      document.querySelector(".screen").append("4");
+      $(".screen").append(4);
     } else if (e.keyCode == 53) {
-      document.querySelector(".screen").append("5");
+      $(".screen").append(5);
     } else if (e.keyCode == 54) {
-      document.querySelector(".screen").append("6");
+      $(".screen").append(6);
     } else if (e.keyCode == 55) {
-      document.querySelector(".screen").append("7");
+      $(".screen").append(7);
     } else if (e.keyCode == 56) {
-      document.querySelector(".screen").append("8");
+      $(".screen").append(8);
     } else if (e.keyCode == 57) {
-      document.querySelector(".screen").append("9");
+      $(".screen").append(9);
     } else if (e.keyCode == 48) {
-      document.querySelector(".screen").append("0");
+      $(".screen").append(0);
+    } else if (e.keyCode == 61) {
+      $(".screen").append("+");
+    } else if (e.keyCode == 187) {
+      $(".screen").append("=");
     }
   }
 };
