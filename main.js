@@ -1,2 +1,3 @@
-import {test} from './js/calc_buttons.js';
-test();
+import { sqrt } from './js/squareroot.js';
+
+sqrt();
