@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+* {
+  padding: 0;
+}
+
+.box {
+  height: 570px;
+  width: 550px;
+  margin-top: 10px;
+  margin: auto;
+  background: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.screen {
+  height: 250px;
+  background: rgb(236, 236, 236);
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.tangenter {
+  width: 60%;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+.store, .a, .b, .c, .d, .e, .blank, .roten, .clear, .seven, .eight, .nine, .divide, .elevated, .four, .five, .six, .multi, .parantes, .one, .two, .three {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.minus, .parantestwo, .equal, .zero, .dot, .plus, .undo {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.blank {
+  background-color: transparent;
+  border: none;
+}
+
+.left, .right, .up, .down {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+  font-size: 13px;
+}
+
+.piltangenter {
+  width: 45%;
+  height: 125px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowone, .rowtwo {
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
