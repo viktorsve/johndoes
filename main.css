@@ -40,7 +40,7 @@
   align-items: flex-end;
 }
 
-.tangenter {
+.box1 {
   width: 60%;
   background: transparent;
   display: flex;
@@ -55,6 +55,15 @@
   margin: 8px;
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
+}
+
+.timerstart, .timerstop {
+  width: 45px;
+  height: 45px;
+  margin: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: center;
 }
 
 .minus, .parantestwo, .equal, .zero, .dot, .plus, .undo {
@@ -77,20 +86,33 @@
   font-size: 13px;
 }
 
-.piltangenter {
+.box2 {
   width: 45%;
-  height: 125px;
+  height: 100%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.rowone, .rowtwo {
+.timertext {
+  text-align: center;
+}
+
+.piltangenter {
   width: 100%;
-  height: 50%;
+  height: 122px;
   background-color: transparent;
   display: flex;
   flex-direction: row;
+  flex-flow: row;
+  flex-wrap: wrap-reverse;
   justify-content: center;
-  align-items: center;
+}
+
+.up {
+}
+
+.left, .right, .down {
+  align-self: flex-end;
 }
