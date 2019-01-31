@@ -33,11 +33,14 @@ export function myEvent(){
     } else if (event.keyCode == 41) {
       $(".screen").append(")");
     } else if(event.keyCode == 61) {
-      $(".screen").append("=");
+      var i = $(".screen")[0];
+      i.innerHTML = eval(i.innerHTML);
     } else if(event.keyCode == 46) {
       $(".screen").append(".");
     } else if(event.keyCode == 42) {
       $(".screen").append("*");
+    } else if(event.keyCode == 8) {
+      $(".screen").html("");
     }
   }
 };
