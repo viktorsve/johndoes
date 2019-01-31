@@ -7,8 +7,17 @@ export function equalFunction() {
 
   function checkNumbers(input) {
     if (input.innerHTML == "=") {
+      if (calcScreen.innerHTML.includes("^")) {
+        calcScreen.innerHTML = calcScreen.innerHTML.replace("^", "**");
+      }
       try {
         calcScreen.innerHTML = eval(calcScreen.innerHTML);
+      } catch (error) {
+        calcScreen.innerHTML = "Error";
+      }
+    } else if (input.innerHTML == "√") {
+      try {
+        calcScreen.innerHTML = Math.sqrt(calcScreen.innerHTML);
       } catch (error) {
         calcScreen.innerHTML = "Error";
       }
