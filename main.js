@@ -10,3 +10,9 @@ import {
 } from "./js/timerfunction.js";
 
 timerFunction();
+
+
+import {
+  myEvent
+} from "./js/keyboard.js";
+myEvent();
