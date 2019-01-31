@@ -1,5 +1,5 @@
 export function numberFunction() {
-  $("button").click(function() {
+  $(".print").click(function() {
     $(".screen").append($(this).text());
   });
 }
