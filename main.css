@@ -29,6 +29,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  width: 530px;
+  overflow: hidden;
 }
 
 .body {
@@ -46,7 +48,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .store, .a, .b, .c, .d, .e, .blank, .roten, .clear, .seven, .eight, .nine, .divide, .elevated, .four, .five, .six, .multi, .parantes, .one, .two, .three {
@@ -110,8 +111,7 @@
   justify-content: center;
 }
 
-.up {
-}
+.up {}
 
 .left, .right, .down {
   align-self: flex-end;
