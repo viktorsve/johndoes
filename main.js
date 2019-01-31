@@ -6,6 +6,13 @@ numberFunction();
 
 
 import {
+  removeLastChar
+} from './js/undo-button.js';
+
+removeLastChar();
+
+
+import {
   timerFunction
 } from "./js/timerfunction.js";
 
