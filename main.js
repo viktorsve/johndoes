@@ -1,8 +1,8 @@
 import {
-  numberFunction
-} from "./js/numberbuttons.js";
+  equalFunction
+} from "./js/equalbutton.js";
 
-numberFunction();
+equalFunction();
 
 
 import {
