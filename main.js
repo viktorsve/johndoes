@@ -23,3 +23,8 @@ import {
   myEvent
 } from "./js/keyboard.js";
 myEvent();
+
+import {
+  storeExpressions
+} from './js/store.js';
+storeExpressions();
