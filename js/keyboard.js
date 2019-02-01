@@ -1,5 +1,6 @@
 export function myEvent(){
   document.addEventListener('keypress', keyHandler, false);
+  document.addEventListener('keydown', keyHandlerTwo, false);
 
   function keyHandler(event) {
     if(event.keyCode == 49) {
@@ -32,15 +33,21 @@ export function myEvent(){
       $(".screen").append("(");
     } else if (event.keyCode == 41) {
       $(".screen").append(")");
-    } else if(event.keyCode == 61) {
-      var i = $(".screen")[0];
-      i.innerHTML = eval(i.innerHTML);
     } else if(event.keyCode == 46) {
       $(".screen").append(".");
     } else if(event.keyCode == 42) {
       $(".screen").append("*");
     } else if(event.keyCode == 8) {
       $(".screen").html("");
+    } else if(event.keyCode == 61) {
+      var i = $(".screen")[0];
+      i.innerHTML = eval(i.innerHTML);
     }
-  }
+  };
+
+  function keyHandlerTwo(event) {
+    if(event.keyCode == 8) {
+      $(".screen").html("");
+    }
+  };
 };
