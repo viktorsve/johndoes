@@ -49,7 +49,7 @@
   flex-wrap: wrap;
 }
 
-.store, .a, .b, .c, .d, .e, .blank, .roten, .clear, .seven, .eight, .nine, .divide, .elevated, .four, .five, .six, .multi, .parantes, .one, .two, .three {
+.store, .a, .b, .c, .d, .e, .roten, .clear, .seven, .eight, .nine, .divide, .elevated, .four, .five, .six, .multi, .parantes, .one, .two, .three {
   width: 45px;
   height: 45px;
   margin: 8px;
@@ -119,6 +119,8 @@
 }
 
 .arrayIndex {
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
   max-height: 200px;
   width: max-content;
   border: 1px solid black;

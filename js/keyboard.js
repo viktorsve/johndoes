@@ -53,6 +53,9 @@ export function myEvent(){
   function keyHandlerTwo(event) {
     if(event.keyCode == 8) {
       $(".screen").html("");
-    }
+    } //kod 221 är för ^ men den reagerar utan shift klick också. Diskutera med gruppen.
+      else if(event.keyCode == 221) {
+        $(".screen").append("^");
+      }
   };
 };
