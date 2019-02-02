@@ -110,8 +110,27 @@
   justify-content: center;
 }
 
-.up {}
+.up {
+
+}
 
 .left, .right, .down {
   align-self: flex-end;
+}
+
+.arrayIndex {
+  max-height: 200px;
+  width: max-content;
+  border: 1px solid black;
+  overflow: scroll;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arrayIndex p, .arrayIndex ol {
+  margin: 5px 10px;
+  list-style: decimal inside;
 }
