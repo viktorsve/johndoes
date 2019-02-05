@@ -1,7 +1,7 @@
 // jshint esversion: 6
 
 function storeExpressions() {
-  $('.store').click(function() {
+  $('.store').one('click', function() {
     //lagra a och skriv ut a
       $('.a').one('click', function() {
         let a = $('.screen').html();
