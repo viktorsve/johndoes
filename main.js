@@ -23,3 +23,5 @@ import {
   myEvent
 } from "./js/keyboard.js";
 myEvent();
+
+import * as name from './js/chat.js';
