@@ -7,7 +7,7 @@ export function chatFunction() {
       b = [];
     }
     if (event.keyCode == 32) {
-      $('.screen').append(' ')
+      $('.screen').append(' ');
     }
   }
 
@@ -125,7 +125,6 @@ export function chatFunction() {
     }
     var x = b.join('');
 
-      console.log(x);
       if (x == 'hello' && event.keyCode == 13) {
         $('.screen').html('Heloo you. How are you?');
         b = [];
@@ -134,15 +133,7 @@ export function chatFunction() {
       } if (event.keyCode == 13 && x != 'hello' && event.keyCode == 13 && x != 'iamgood') {
        $('.screen').html('I do not understandddd.');
       }
-
-
-
-    console.log(b);
-    console.log(x);
   }
 }
-
-
-
 
 chatFunction();
