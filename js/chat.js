@@ -1,4 +1,4 @@
-export function chatFunction() {
+function chatFunction() {
   document.addEventListener("keypress", keyPressFunc, false);
   document.addEventListener("keydown", keyPressFuncTwo, false);
 
@@ -135,5 +135,6 @@ export function chatFunction() {
       }
   }
 }
+
 
 chatFunction();
