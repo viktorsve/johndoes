@@ -124,10 +124,8 @@ function chatFunction() {
 
     }
     var x = b.join('');
-
       if (x == 'hello' && event.keyCode == 13) {
         $('.screen').html('Heloo you. How are you?');
-        b = [];
       } if (x == "iamgood" && event.keyCode == 13) {
         $('.screen').html('Nice, me good too!');
       } if (event.keyCode == 13 && x != 'hello' && event.keyCode == 13 && x != 'iamgood') {
@@ -136,5 +134,8 @@ function chatFunction() {
   }
 }
 
+
+
+console.log('sasa');
 
 chatFunction();
