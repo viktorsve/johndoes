@@ -20,6 +20,4 @@ export function saveExpression() {
       $('ol').prepend("<li>" + 'Svar: ' + savedArray[0] + "</li>");
     }
   }
-  //logging the array for easy access and live testing. Will remove when done.
-  console.log(savedArray);
 }
