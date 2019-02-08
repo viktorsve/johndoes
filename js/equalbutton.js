@@ -1,8 +1,15 @@
+import {
+  saveExpression
+} from "./savedExpressions.js";
+
 export function equalFunction() {
   let calcScreen = $(".screen")[0];
   $(".print").click(function() {
     const newInput = checkNumbers(this.innerHTML, calcScreen.innerHTML);
     calcScreen.innerHTML = newInput;
+    if ($(this).hasClass("equal")) {
+      saveExpression();
+    }
   });
 }
 
