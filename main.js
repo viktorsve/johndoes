@@ -1,13 +1,14 @@
 import {
-  equalFunction
+  equalFunction,
+  checkNumbers
 } from "./js/equalbutton.js";
 
 equalFunction();
-
+checkNumbers();
 
 import {
   removeLastChar
-} from './js/undo-button.js';
+} from "./js/undo-button.js";
 
 removeLastChar();
 
