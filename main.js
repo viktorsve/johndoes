@@ -21,3 +21,8 @@ import {
   myEvent
 } from "./js/keyboard.js";
 myEvent();
+
+import {
+  chatFunction
+} from './js/chat.js';
+chatFunction();
