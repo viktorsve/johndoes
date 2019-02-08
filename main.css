@@ -110,10 +110,6 @@
   justify-content: center;
 }
 
-.up {
-
-}
-
 .left, .right, .down {
   align-self: flex-end;
 }
