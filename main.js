@@ -24,4 +24,7 @@ import {
 } from "./js/keyboard.js";
 myEvent();
 
-import * as name from './js/chat.js';
+import {
+  chatFunction
+} from './js/chat.js';
+chatFunction();
