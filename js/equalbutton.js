@@ -1,6 +1,13 @@
+import {
+  saveExpression
+} from './savedExpressions.js'
+
 export function equalFunction() {
   $(".print").click(function() {
     checkNumbers(this);
+    if ($(this).hasClass("equal")) {
+      saveExpression();
+    }
   });
 
   let calcScreen = $(".screen")[0];

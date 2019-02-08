@@ -1,3 +1,7 @@
+import {
+  saveExpression
+} from './savedExpressions.js'
+
 export function myEvent(){
   document.addEventListener('keypress', keyHandler, false);
   document.addEventListener('keydown', keyHandlerTwo, false);
@@ -42,6 +46,7 @@ export function myEvent(){
     } else if(event.keyCode == 61) {
       var i = $(".screen")[0];
       i.innerHTML = eval(i.innerHTML);
+      saveExpression();
     }
   };
 
