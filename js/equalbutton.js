@@ -1,12 +1,20 @@
 import {
   saveExpression
+<<<<<<< HEAD
 } from "./savedExpressions.js";
+=======
+} from './savedExpressions.js'
+>>>>>>> master
 
 export function equalFunction() {
   let calcScreen = $(".screen")[0];
   $(".print").click(function() {
+<<<<<<< HEAD
     const newInput = checkNumbers(this.innerHTML, calcScreen.innerHTML);
     calcScreen.innerHTML = newInput;
+=======
+    checkNumbers(this);
+>>>>>>> master
     if ($(this).hasClass("equal")) {
       saveExpression();
     }
