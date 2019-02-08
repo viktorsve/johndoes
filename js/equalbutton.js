@@ -1,30 +1,38 @@
+import {
+  saveExpression
+} from "./savedExpressions.js";
+
 export function equalFunction() {
-  $(".print").click(function() {
-    checkNumbers(this);
-  });
-
   let calcScreen = $(".screen")[0];
-
-  function checkNumbers(input) {
-    if (input.innerHTML == "=") {
-      if (calcScreen.innerHTML.includes("^")) {
-        calcScreen.innerHTML = calcScreen.innerHTML.replace("^", "**");
-      }
-      try {
-        calcScreen.innerHTML = eval(calcScreen.innerHTML);
-      } catch (error) {
-        calcScreen.innerHTML = "Error";
-      }
-    } else if (input.innerHTML == "√") {
-      try {
-        calcScreen.innerHTML = Math.sqrt(calcScreen.innerHTML);
-      } catch (error) {
-        calcScreen.innerHTML = "Error";
-      }
-    } else if (calcScreen.innerHTML == "0" || calcScreen.innerHTML == "Error") {
-      calcScreen.innerHTML = input.innerHTML;
-    } else {
-      calcScreen.innerHTML += input.innerHTML;
+  $(".print").click(function() {
+    const newInput = checkNumbers(this.innerHTML, calcScreen.innerHTML);
+    calcScreen.innerHTML = newInput;
+    if ($(this).hasClass("equal")) {
+      saveExpression();
     }
+  });
+}
+
+export function checkNumbers(inputString, calcScreenString) {
+  if (inputString == "=") {
+    if (calcScreenString.includes("^")) {
+      calcScreenString = calcScreenString.replace("^", "**");
+    }
+    try {
+      return eval(calcScreenString);
+    } catch (error) {
+      return "Error";
+    }
+  } else if (inputString == "√") {
+    try {
+      if (isNaN(Math.sqrt(calcScreenString))) throw "Error";
+      return Math.sqrt(calcScreenString);
+    } catch (error) {
+      return "Error";
+    }
+  } else if (calcScreenString == "0" || calcScreenString == "Error") {
+    return inputString;
+  } else {
+    return calcScreenString + inputString;
   }
 }
